@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Header from "./components/Header";
+import Title from "./components/Title";
+import Concept from "./components/Concept";
+import Instractor from "./components/Instractor";
+import Schedule from "./components/Schedule";
+import Fee from "./components/Fee";
+import Access from "./components/Access";
+import Footer from "./components/footer";
+
+//https://tailblocks.cc/
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Title />
+      <Concept />
+      <Schedule />
+      <Instractor />
+      <Fee />
+      <Access />
+      <Footer />
     </div>
   );
 }
